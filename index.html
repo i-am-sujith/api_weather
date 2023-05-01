@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/714a246066.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <video autoplay muted loop plays-inline class="video" ">
+        <source src="./images/mobile_view.mp4" type="video/mp4">
+    </video>
+    <div class="main">
+        
+        
+        <div class="head">
+            <div class="d1 t1">
+                <div class="temp">
+                    <span id="temp"></span>
+                </div>
+                <div class="dsub">
+                    <span id="description"></span>
+                </div>
+                <div class="dsub">
+                    <i class="fa-solid fa-location-dot fa-shake"></i>
+
+                    <span id="location"></span>
+                </div>
+
+            </div>
+
+            <div class="d1 t2">
+                <div id="date"></div>
+                <div id="time"></div>
+                <div>
+                    <input type="text" placeholder="enter city" id="city">
+                </div>
+                <div>
+                    <button id="" type="submit" onclick="weatherData()"> search </button>
+                </div>
+ <!----------------------- mobile responsive---------------------- -->
+                <div class="mobileResponsive">
+
+                    <div class="temp">
+                        <span id="temp1"></span>
+                    </div>
+                    <div class="dsub">
+                        <span id="description1"></span>
+                    </div>
+                    <div class="dsub">
+                        <i class="fa-solid fa-location-dot fa-shake"></i>
+    
+                        <span id="location1"></span>
+                    </div>
+              </div>
+
+
+              <div class="currentLocation" >
+                     <button id="currentLocation" onclick="getWeatherByLocation()"> current_<i class="fa-solid fa-earth-africa fa-beat"></i>_location</button>
+              </div>
+
+            </div>
+ <!---------------------- mobile responsive ------------------  -->
+
+            <div class="d1 t3" >
+                <div class="dsub">
+                    <span id="humidity"></span>
+                    <i class="fa-solid fa-temperature-low"></i>
+
+                </div>
+                <div class="dsub">
+                    
+                    <span id="airpressure"></span>
+                    <i class="fa-solid fa-weight-scale fa-beat"></i>
+                </div>
+                <div class="dsub">
+                   
+                    <span id="windspeed"></span>
+                    <i class="fa-solid fa-wind fa-beat-fade"></i>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- bottom section -->
+
+        <div class="content">
+            <div class="c1 f1">
+                <div class="csub">
+                    <span id="mintemp"></span>
+                    <i class="fa-solid fa-temperature-empty "></i>
+                </div>
+                <div class="csub">
+                    <span id="maxtemp"></span>
+                    <i class="fa-solid fa-temperature-full "></i>
+                </div>
+            </div>
+            <!-- ----------------mobile responsive content main----------- ----------------------------->
+            <div <div class="c1 f2 contentMain">
+                <div class="csub">
+                    <span id="risetime"></span>
+                    <i class="fa-solid fa-sun fa-spin"></i>
+                </div>
+                <div class="csub">
+                    <span id="settime"></span>
+                    <i class="fa-solid fa-cloud-sun fa-fade"></i>
+                </div>
+
+                <div class="mobileResponsive">
+                    <div class="csub">
+                        <span id="mintemp1"></span>
+                        <i class="fa-solid fa-temperature-empty "></i>
+                    </div>
+                    <div class="csub">
+                        <span id="maxtemp1"></span>
+                        <i class="fa-solid fa-temperature-full "></i>
+                    </div>
+
+                    <div class="csub">
+                        <span id="cloudcover1"></span>
+                        <i class="fa-solid fa-cloud fa-bounce"></i>
+                    </div>
+
+                    <div class="dsub">
+                        <span id="humidity1"></span>
+                        <i class="fa-solid fa-temperature-low"></i>
+
+                    </div>
+                    <div class="dsub">
+                        <span id="airpressure1"></span>
+                        <i class="fa-solid fa-weight-scale fa-beat"></i>
+
+                    </div>
+                    <div class="dsub">
+                        <span id="windspeed1"></span>
+                        <i class="fa-solid fa-wind fa-beat-fade"></i>
+
+                    </div>
+                    <div class="csub">
+                        <span id="visibility1"></span>
+                        <i class="fa-regular fa-eye fa-beat"></i>
+                    </div>
+                  
+
+                </div>
+            </div>
+            <!----------------mobile responsive contenMain ending -------------------------------->
+            <div class="c1 f3">
+                <div class="csub">
+                    <span id="cloudcover"></span>
+                    <i class="fa-solid fa-cloud fa-bounce"></i>
+                </div>
+
+                <div class="csub">
+                    <span id="visibility"></span>
+                    <i class="fa-regular fa-eye fa-beat"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="./JS.js"></script>
+
+</html>

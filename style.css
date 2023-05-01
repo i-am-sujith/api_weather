@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: serif 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background-image: url("./images/sunny.jpg");
+    background-color: rgba(0, 0, 0,0.25);
+    background-blend-mode:multiply;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.video {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 400px;
+}
+
+.d1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+    width: 50%;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    background-color: rgba(52, 16, 16, 0.042);
+    border-radius: 50px;
+}
+
+
+.content {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: rgba(245, 245, 245, 0.164); */
+    height: 250px;
+    width: 70%;
+    padding: 5px;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 50px;
+    background-color: rgba(52, 16, 16, 0.044);
+
+}
+
+
+
+input {
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin: 30px;
+
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+@media(min-aspect-ratio: 16/9) {
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio:16/9){
+    .video{
+        width: auto;
+        height: 100%;
+    }
+}
+@media(max-width:767px){
+   
+    *{
+        font-size: small;
+
+    }
+    .t1 , .t3 , .f1 , .f3{
+        display: none;
+    }
+    .head {
+        height: 300px;
+    }
+    .dsub , .csub {
+        margin: 8px;
+    }
+    .t2{
+        height: auto;
+    }
+    .main{
+        margin-top: 70px;
+    }
+    
+
+}
+@media(min-width:767px){
+    .mobileResponsive{
+        display: none;
+    }
+}
+i{
+    color: rgb(255, 255, 255);
+}
+#temp , #temp1{
+    font-size: 300%;
+}
+#location{
+    font-size: 150%;
+}
+#description{
+    font-size: 150%;
+}
+#date,
+#time {
+    background-color: rgba(0, 0, 0, 0.15);
+    color: white;
+    font-size: 150%
+}
+.currentLocation{
+    margin: 8px;
+}
+.currentLocation button{
+    background-color: transparent;
+    margin: 1px;
+    color: yellow;
+
+}
+.dsub {
+    margin:5px;
+}
+.csub {
+    margin: 10px;
+}
